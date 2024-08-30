@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F3F7EC;
+    color: black;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: weight;
+    font-style: normal;
+    /* overflow:hidden; */
+}
+
+.main{
+    flex-direction: column;
+}
+
+.topmenu{
+    display: flex;
+    background-color: #005C78;
+    color: white;
+    top:0;
+    line-height: 6.25rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rightsec{
+    display: flex;
+}
+.logo img{
+    height: 2.5rem;
+    width: 9.06rem;
+    padding: 0rem 3.1rem;
+    padding-top: 1.56rem;
+
+}
+.line{
+    font-size: 2rem;
+    font-weight: 20;
+    padding-right: 1.80rem;
+}
+.t1 a{
+    color: white;
+    padding: 0rem 1.30rem;
+    font-size: 1.62rem;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.t1 a:hover{
+    opacity: 1;
+    text-decoration: underline;
+    text-decoration-thickness: 0.25rem;
+    text-underline-offset: 2.3rem;
+}
+
+.leftsec{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+}
+.search{
+    padding: 0 4rem;
+    padding-left: 22rem;
+}
+.search input{
+    line-height: 2rem;
+    width: 15rem;
+}
+.search ::placeholder{
+    font-size: 1.25rem;
+}
+.t2{
+    font-size: 1.87rem;
+    padding: 0 1.25rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.t22{
+    font-size: 1.25rem;
+    padding: 0 0.3rem;
+}
+
+
+/* For profile */
+.holder{
+    width: 20rem;
+    height: 32.5rem;
+    background-color: #E88D67;
+    /* border: 5px solid black;
+    border-radius: 5px; */
+    display: inline-block;
+    margin: 8px;
+}
+.text{
+    padding: 0 1.5rem 0 1.5rem;
+    font-size: 1rem;
+}   
+img{
+    width: 85%;
+    height: 50%;
+    padding: 1.5rem;
+}
+/* closed */
+

@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F8EDED;
+    color: black;
+    /* overflow: scroll; */
+    font-family: "Ubuntu", sans-serif;
+    font-weight: weight;
+    font-style: normal;
+    
+}
+
+.main{
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.page1{
+    height: 1100px;
+    background-color: #FF8225;
+}
+
+.top{
+    top: 0px;
+    display: flex;
+    background-color: #FF8225 ;
+    padding: 20px 50px;
+    line-height: 75px;
+    position: fixed;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.top.scrolled {
+    background-color: #F8EDED;
+  }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.t1 img{
+    padding-top: 10px;
+    height: 43px;
+    width: 145px;
+    padding-right: 70px;
+}
+
+.t1{
+    /* background-color: #FF8225; */
+    display: flex;
+    padding-bottom: 20px;
+    padding-left: 0;
+    justify-content: center;
+    width: fit-content;
+    /* align-items: center; */
+}
+
+.drop1 a{
+    font-size: 30px;
+    font-weight: 300;
+    text-decoration: none;
+    padding-right: 8px;
+}
+
+.down {
+    display: inline;
+    transition: transform 0.5s ease; /* Smooth transition over 0.5 seconds */
+  }
+
+.t2{
+    padding-bottom: 20px;
+    padding-left: 500px;
+}
+.badge{
+    font-size: 25px;
+    text-decoration:solid;
+    height: 55px;
+    background-color: #173B45;
+    color:white;
+    width: fit-content;
+    padding: 5px 15px;
+    margin-right: 10px;
+    border-color: white;
+}
+
+.badge a{
+    background-color: #173B45;
+    color:white;
+}
+
+.t2 .badge :hover{
+    background-color: #F8EDED;
+    color: black;
+}
+    
+
+
+/* .badge a:hover{
+    background-color: #F8EDED;
+    color: black;
+} */
+
+.middle {
+    margin-top: 138px;
+    /* min-height: 200px; */
+    background-color: #FF8225;
+    display: flex;
+    color: black;
+    padding-left: 50px;
+}
+
+.writing{
+    color: black;
+    max-width: 800px; 
+    /* margin: 0 auto; */
+    background-color: #FF8225;
+}
+
+.p1{
+    font-size: 70px;
+    padding-top: 120px;
+    font-weight: 600;
+}
+
+.p2{
+    font-size: 35px;
+    padding-top: 30px;
+}
+
+.p3{
+    font-size: 35px;
+    padding-top: 100px;;
+    /* padding-bottom: 30px; */
+}
+
+.photo{
+    height: 300px;
+    width: 300px;
+    padding-left: 250px;
+    padding-top: 255px;
+    background-color: #FF8225;
+}
+
+@keyframes slide {
+    from{
+        tranform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.lower{
+    overflow: hidden;
+    margin-top: 100px;
+    white-space: nowrap;
+
+}
+
+.scroll {
+    display: inline-block;
+    animation: 5s slide infinite linear;
+}
+
+.scroll img{
+    height: 165px;
+}
+
+
+.page2{
+    background-color: #F8EDED;
+    height: 1300px;
+}
+
+.page3{
+    background-color: #F8EDED;
+    height: 1300px;
+}

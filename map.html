@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map of Delhi</title>
+    <link rel="stylesheet" href="crew.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        /* Set the size of the map */
+        #map {
+            height: 500px; /* Height of the map */
+            width: 100%; /* Width of the map */
+        }
+    </style>
+</head>
+<body>
+    <div class="topmenu">
+        <div class="rightsec">
+        <div class="logo"><img src="Adidas_Logo.png"></div>
+        <div class="line">|</div>
+        <div class="t1"><a href="profile.html">Profile</a></div>
+        <div class="t1"><a href="map.html">Schedule</a></div>
+        <div class="t1"><a href="#">Apply</a></div>
+        <div class="t1"><a href="#">Request</a></div>
+        </div>
+        <div class="leftsec">
+            <div class="search">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="t2"><i class="fa-regular fa-message"></i></div>
+            <div class="t2"><i class="fa-regular fa-bell"></i></div>
+            <div class="t2"><i class="fa-regular fa-user"></i><div class="t22"><i class="fa-solid fa-angle-down"></i></div></div>
+        </div>
+    </div>
+    <!-- Div to hold the map -->
+    <div id="map"></div>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        // Step 1: Initialize the map centered on Delhi
+        var map = L.map('map').setView([28.6139, 77.2090], 13); // Coordinates for Delhi
+
+        // Step 2: Set up the OSM layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19, // Max zoom level
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Step 3: Optional - Add a marker for central Delhi
+        var marker = L.marker([28.6139, 77.2090]).addTo(map)
+            .bindPopup('New Delhi - The Capital of India')
+            .openPopup();
+    </script>
+</body>
+</html>
